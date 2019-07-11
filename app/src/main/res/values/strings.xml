@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Study Organizer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="assignment_main">Assignments</string>
+    <string name="assignment_expanded">Assignment Details</string>
+    <string name="assignment_edit">Make Changes </string>
+    <string name="assignment_new">Create Assignment </string>
+
+    <string name="project_main">Project</string>
+    <string name="project_expanded">Project Details</string>
+    <string name="project_edit">Make Changes </string>
+    <string name="project_new">Create Project</string>
+
+    <string name="subject_main">Subjects</string>
+    <string name="subject_expanded">Subject Details</string>
+    <string name="subject_edit">Make Changes </string>
+    <string name="subject_new">Create Subject</string>
+
+    <string name="card_1_title">Binaural beats</string>
+    <string name="card_2_title">Remember cards</string>
+    <string name="card_3_title">Subjects</string>
+    <string name="card_4_title">Linear Tracker </string>
+    <string name="card_5_title">Assignments</string>
+    <string name="card_6_title">Subtask\nOrganizer</string>
+    <string name="card_7_title">Remember\n cards</string>
+    <string name="card_8_title">Subscription</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="tab_text_1">Binaural beats</string>
+    <string name="tab_text_2">Isochronic tones</string>
+    <string name="tab_text_3">Soothing music</string>
+    <string name="notes_long_text">Notes \n\n\n\n\n\n\n\n </string>
+    <string name="cards_long_text">Contents  \n\n\n\n\n\n\n\n </string>
+
+    <string name="complete">Completed</string>
+    <string name="incomplete">Incomplete</string>
+
+    <string name="calendar_font">lato_light.ttf</string>
+
+    <string name="title_activity_remember_cards">RememberCardsActivity</string>
+
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+
+    <string name="alpha_text">Alpha : 8Hz\nWakeful relaxation , Creativity </string>
+    <string name="beta_low_text">Low Beta :  12Hz\nRelax and concentrate   </string>
+    <string name="beta_mid_text">Mid Beta  : 18Hz\nFocus , Motivation , Reasoning , actively doing some work </string>
+    <string name="delta_low_text">Low Delta : 0.5 Hz\nDeep sleep </string>
+    <string name="delta_mid_text">Delta : 2Hz \nDreamless sleep </string>
+    <string name="theta_text">Theta : 4Hz\nStress relieve , Dreamy sleep , free flow of thoughts  </string>
+
+    <string name="planner_instruction">
+         <b>1. WHAT IS AI PLANNER ?</b>\n\n
+
+        So how do we plan to study for exams when we have limited time?\n\n
+
+        Most of us find the total number of days left and the total number of subjects that we have to study. Then, we make a <i>rough estimate</i> of how much time do we have to give <i>per</i> subject. The problem is that this way of planning is <i>unorganized</i> , but we don\'t have a better alternative, so we stick with it.\n\n
+        At best we write the plan on a paper or on a calendar but we know that it <i>lacks flexibility</i>. It is not possible to follow the plan for 10 continuous days ( for some of us it\'s definitely not easy), so we end up switching days, skipping days, and slowly we end up losing track of our plan .\n\n The AI-based exam planner is designed to handle the above-mentioned problems.
+
+        \n\n\n\n
+        <b>2. HOW DOES IT WORK ?</b>\n\n
+
+
+        <i>Steps to create a schedule</i> -\n\n
+
+            <i>Step 1 </i>: pick a date range for which you want to find the schedule\n
+            <i>Step 2 </i>: review your subjects and press calculate\n\n
+
+        <i>Steps to customize the schedule</i> -\n\n
+
+            <i>Step 1</i> : long press any subject and move the subject to a new position .\n
+            <i>Step 2</i> : drop the subject . The schedule rearranges itself . \n\n
+
+
+            <i>Replacing a subject</i> -\n\n
+
+            <i>step 1</i> : click on a subject and pick any subject from the list to replace .
+
+
+
+
+        \n\n\n\n
+        <b>3. HOW DOES THE ALGORITHM WORK ?</b>\n\n
+
+           Currently , the planner calculates the most consistent schedule . By consistent , we mean that you have to put
+           equal effort throughout the schedule . Difficult and easier/ easy subjects are spread equally .
+
+        \n\n\n\n
+        <b>4. UPCOMING FEATURES</b>\n\n
+
+            Planning two subjects in a single day and still having the consistency.
+
+    </string>
+
+    <string name="deadline">Deadline</string>
+
+    <string name="linear_tracker_instruction">
+        <b>How does linear tracker work ?</b>\n\n
+        While adding any subject you have to pick a range for which you plan to study that subject. The cursor travels through
+        the bar and as it moves forward it blinks faster, thus letting you know that you have less time. The cursor takes a step
+        forward every next day.
+    </string>
+
+    <string name="cards_instruction">
+
+        <b>How does remember cards work ?</b>\n\n
+
+        Remember card lets you add small notes and you receive these notes as notifications from our servers frequently.\n
+        These notifications help in memorizing formulas , key points , equations , terms .\n\n
+
+        <i>How frequently notifications are sent?</i>
+
+        It depends on the <i> card priority</i> you add when you are saving a new \'remember card\' \n\n
+
+        <i>Priority : 1 </i> Get notification every 12 hours\n
+        <i>Priority : 2 </i> Get notification every 5 hours\n
+        <i>Priority : 3 </i> Get notification every 2 hours\n
+        <i>Priority : 4 </i> Get notification every 1 hour\n\n\n
+
+        <b>How does assignments / projects work ?</b>\n\n
+
+        Add the name of your assignment / project and add the deadline. \n
+        You will get notifications about the deadline if your assignment is not marked as \'completed\'.\n
+        These notifications are sent three , two and one day before the deadline \n
+
+    </string>
+
+    <!-- in app billing start -->
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Trivial Drive v2</string>
+
+    <string name="alert_no_gas">Oh, no! You are out of gas! Try buying some!</string>
+    <string name="alert_drove">Vroooom, you drove a few miles.</string>
+    <string name="alert_fill_gas">You filled &#188; tank. Your tank is now %1$d/4 full!</string>
+    <string name="alert_error_consuming">Error while consuming: %1$s</string>
+    <string name="alert_already_purchased">Item is already purchased</string>
+
+    <string name="error_no_skus">We didn\'t find any SKUs to display&#8230; Check your internet
+        connection and make sure your Google Developer Console was setup correctly.</string>
+    <string name="error_billing_unavailable">Billing unavailable. Make sure your Google Play app
+        is setup correctly</string>
+    <string name="error_billing_default">Billing unavailable. Please check your device.</string>
+
+    <string name="button_drive">Drive</string>
+    <string name="button_purchase">Purchase</string>
+    <string name="button_buy">Purchase</string>
+    <string name="button_own">Owned</string>
+    <string name="button_update">Update</string>
+    <string name="button_change">Change</string>
+    <string name="button_full_tank">Full tank</string>
+    <string name="toast_full_tank">Your tank is full, please use some gas before buying
+        more.</string>
+
+    <string name="header_inapp">Support the developers by donating </string>
+    <string name="header_subscriptions">Subscriptions</string>
+
+    <string name="content_description_app_loading_image">App loading image</string>
+    <string name="content_description_title_image">80\'s Video Game Style Car Logo</string>
+    <string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+    <string name="thank_you_message"> Thank you for your support! We have been trying to do our best.
+        You can support us even more by leaving us feedback. We read each and every suggestion ,
+        if you\'d like some new feature added in the app or
+        any modifications, feel free to email us \n\n
+        <i> -The study organizer team</i>
+    </string>
+
+    <!-- in app billing end -->
+
+    <string name="calendar_starting_date"> Pick the starting date </string>
+    <string name="calendar_end_date"> Pick the end date </string>
+    <string name="calendar_end_pick_subject"> Select any subject </string>
+</resources>

@@ -1,0 +1,168 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="buttons">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/rounded_edges_button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="calendar_buttons">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="calendar_text">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="lato_dark_text">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="lato_grey_text">
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="recycler_cards_text">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="recycler_cards_header">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#d3d3d3</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="dashboardCards">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dashboard">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dashboardTextView">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="notesIcon">
+        <item name="android:src">@drawable/notes_icon</item>
+    </style>
+    <style name="deadlineIcon">
+        <item name="android:src">@drawable/deadline_icon</item>
+    </style>
+    <style name="totalHoursIcon">
+        <item name="android:src">@drawable/total_hours</item>
+    </style>
+    <style name="namesIcon">
+        <item name="android:src">@drawable/name_icon</item>
+    </style>
+    <style name="creditsIcon">
+        <item name="android:src">@drawable/credits_icon</item>
+    </style>
+    <style name="difficultyIcon">
+        <item name="android:src">@drawable/difficulty_icon</item>
+    </style>
+    <style name="cardsTitleIcon">
+        <item name="android:src">@drawable/card_title</item>
+    </style>
+    <style name="cardsPriority">
+        <item name="android:src">@drawable/card_priority</item>
+    </style>
+
+    <!-- in app billing start-->
+
+    <!-- Button styles -->
+    <style name="BaseButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+    </style>
+
+    <style name="ButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@color/ascent_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+
+    <style name="DriveButtonStyle" parent="ButtonStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/ascent_color</item>
+    </style>
+
+    <!-- CardView -->
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/card_view_margin</item>
+        <item name="android:layout_marginLeft">@dimen/card_view_margin</item>
+        <item name="cardCornerRadius">@dimen/card_view_card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_view_card_elevation</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+
+
+<!-- in app billing end -->
+
+
+</resources>

@@ -1,0 +1,202 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.studyco">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+      android:name=".ReactMainApp"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:windowSoftInputMode="adjustResize">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+
+        <activity android:name=".TrivialDriveActivity"/>
+        <activity android:name=".LinearTracker.LinearTrackerActivity"
+            />
+        <activity android:name=".Dashboard.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+        <activity
+            android:name=".RememberCards.RememberCardsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/title_activity_remember_cards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Dashboard.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Subjects.SubjectActivity"
+            android:label="@string/subject_main"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Projects.ProjectActivity"
+            android:label="@string/project_main"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Assignments.AssignmentActivity"
+            android:label="@string/assignment_main"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Music.MusicActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Assignments.CreateAssignmentActivity"
+            android:label="@string/assignment_new"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Projects.CreateProjectActivity"
+            android:label="@string/project_new"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Subjects.CreateSubjectActivity"
+            android:label="@string/subject_new"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Assignments.AssignmentExpandedActivity"
+            android:label="@string/assignment_expanded"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Subjects.SubjectExpandedActivity"
+            android:label="@string/subject_expanded"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Projects.ProjectExpandedActivity"
+            android:label="@string/project_expanded"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Assignments.EditAssignmentActivity"
+            android:label="@string/assignment_edit"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Projects.EditProjectActivity"
+            android:label="@string/project_edit"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Subjects.EditSubjectActivity"
+            android:label="@string/subject_edit"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name=".Exams.ExamPlannerActivity"
+            android:label="@string/app_name"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+
+        <activity
+            android:name=".RememberCards.RememberCardExpanded"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+
+        <activity android:name=".LinearCounter.LinearCounter"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+        <activity
+            android:name=".PrivacyPolicy.PrivacyPolicyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+
+        <service
+            android:name=".FirebaseHandling.FirebaseInstanceService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseHandling.FirebaseMessageService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>

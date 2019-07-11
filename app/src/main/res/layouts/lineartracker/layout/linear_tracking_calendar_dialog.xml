@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE RANGE FOR THE SCHEDULE"
+            style="@style/calendar_text"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cormorant_sc_light">
+
+                <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cormorant_sc_light"
+                    custom:calendar_tag="Test"
+                    custom:disable_date_color="#ABABAB"
+                    custom:editable="true"
+                    custom:enable_past_date="true"
+                    custom:header_bg="@drawable/calendar_header"
+                    custom:range_color="#ffa500"
+                    custom:selected_date_circle_color="#ffa500"
+                    custom:title_color="@android:color/black"
+                    custom:week_offset="0">
+
+                </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <RadioGroup
+                        android:id="@+id/numberOfSubjectRadio"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/numberOfSubjectText"/>
+
+                    <ImageButton
+                        android:id="@+id/calendar_proceed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_below="@id/numberOfSubjectRadio"
+                        style="@style/buttons"
+                        android:padding="5dp"
+                        android:src="@drawable/next"
+                        android:layout_centerHorizontal="true"
+                        android:text="Next"
+                        android:maxHeight="@dimen/button_height"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
